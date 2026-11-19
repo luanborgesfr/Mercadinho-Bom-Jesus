@@ -1,4 +1,3 @@
-/** Camada 2 — Atalhos de DOM. */
 BJ.dom = {
   one: function (selector, root) {
     return (root || document).querySelector(selector);
@@ -13,7 +12,6 @@ BJ.dom = {
       if (target && root.contains(target)) handler(event, target);
     });
   },
-  /** Cria elemento a partir de HTML de string. */
   html: function (markup) {
     var tpl = document.createElement("template");
     tpl.innerHTML = markup.trim();
