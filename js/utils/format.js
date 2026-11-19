@@ -1,4 +1,3 @@
-/** Camada 2 — Utilitários de formatação (sem dependência de DOM). */
 BJ.format = (function () {
   var money = new Intl.NumberFormat(BJ.config.currency.locale, {
     style: "currency",
