@@ -1,8 +1,3 @@
-/**
- * Camada 1 — Dados.
- * ATENÇÃO: nomes e preços abaixo são EXEMPLOS. Troque pelos produtos reais do mercadinho.
- * Para adicionar um produto, copie uma linha e mude o id (precisa ser único).
- */
 BJ.products = [
   { id: "arroz-5kg",     name: "Arroz 5kg",          unit: "pacote",  price: 28.9, category: "Mercearia",  emoji: "🍚" },
   { id: "feijao-1kg",    name: "Feijão 1kg",         unit: "pacote",  price: 8.5,  category: "Mercearia",  emoji: "🫘" },
