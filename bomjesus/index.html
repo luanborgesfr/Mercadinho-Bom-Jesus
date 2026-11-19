@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page">
-
-  <!-- ============ HEADER ============ -->
   <header class="header">
     <div class="header__inner container">
       <a class="header__brand" href="#inicio" aria-label="Comercial Bom Jesus - início">
@@ -38,7 +36,125 @@
         </button>
       </div>
     </div>
-    <div class="header__stripe"></div>
+    <div class="header__stripe"> </div>
   </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="hero__kicker">Comercial Bom Jesus</p>
+          <h1 class="hero__title">Sua família<br>mais <span class="hero__highlight">feliz!</span></h1>
+          <p class="hero__text">Tudo o que você precisa pra mesa de casa, pertinho de você no bairro Palmeiras.</p>
+          <div class="hero__actions">
+            <a class="btn btn--navy" href="#produtos">Ver produtos</a>
+            <a class="btn btn--green" href="#" data-whatsapp target="_blank" rel="noopener">Pedir no WhatsApp</a>
+          </div>
+        </div>
+
+        <figure class="mascot">
+          <img class="mascot__img" src="assets/mascote.png" alt="Mascote do Comercial Bom Jesus com um carrinho de compras" data-asset>
+          <div class="mascot__placeholder">Coloque o mascote em<br><code>assets/mascote.png</code></div>
+        </figure>
+      </div>
+    </section>
+    <section class="section" id="produtos">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">Nossos produtos</h2>
+          <p class="section__subtitle">Escolha, monte seu carrinho e envie o pedido pelo WhatsApp.</p>
+        </header>
+
+        <div class="filters" data-filters role="tablist" aria-label="Categorias"></div>
+        <div class="products" data-products></div>
+      </div>
+    </section>
+    <section class="section section--dots" id="sobre">
+      <div class="container about">
+        <div class="about__card">
+          <h2 class="section__title">Mais que um mercadinho</h2>
+          <p class="about__text">O Comercial Bom Jesus nasceu pra cuidar da sua família: preço justo, produto fresquinho e atendimento de vizinho.</p>
+          <ul class="about__list">
+            <li class="about__item"><span class="about__dot"></span>Atendimento de quem conhece você</li>
+            <li class="about__item"><span class="about__dot"></span>Produtos frescos todos os dias</li>
+            <li class="about__item"><span class="about__dot"></span>Pedido fácil pelo WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contato">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">Venha nos visitar</h2>
+        </header>
+
+        <div class="contact">
+          <article class="contact__card">
+            <h3 class="contact__label">Endereço</h3>
+            <p class="contact__value">Rua Gilberto Simões de Oliveira<br>Bairro Palmeiras<br>São Miguel do Guamá - PA</p>
+            <a class="btn btn--outline" href="#" data-map target="_blank" rel="noopener">Ver no mapa</a>
+          </article>
+          <article class="contact__card">
+            <h3 class="contact__label">WhatsApp</h3>
+            <p class="contact__value" data-config="phone">Em breve</p>
+            <a class="btn btn--green" href="#" data-whatsapp target="_blank" rel="noopener">Chamar agora</a>
+          </article>
+          <article class="contact__card">
+            <h3 class="contact__label">Horário</h3>
+            <p class="contact__value" data-config="hours">Em breve</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Comercial Bom Jesus</p>
+      <p class="footer__slogan">sua família mais feliz!</p>
+      <p class="footer__small">Rua Gilberto Simões de Oliveira, Palmeiras · São Miguel do Guamá - PA</p>
+    </div>
+  </footer>
+  <div class="fab">
+    <button class="fab__btn fab__btn--cart" type="button" data-cart-open aria-label="Abrir carrinho">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2M9 20a1 1 0 1 0 0-.01M17 20a1 1 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="badge badge--float" data-cart-count>0</span>
+    </button>
+    <a class="fab__btn fab__btn--whatsapp" href="#" data-whatsapp target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.6-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2L9 8.5Z" fill="currentColor"/></svg>
+    </a>
+  </div>
+  <div class="overlay" data-overlay hidden></div>
+  <aside class="cart" data-cart aria-hidden="true" aria-label="Carrinho de compras">
+    <header class="cart__head">
+      <h2 class="cart__title">Seu carrinho</h2>
+      <button class="cart__close" type="button" data-cart-close aria-label="Fechar carrinho">&times;</button>
+    </header>
+
+    <ul class="cart__list" data-cart-list></ul>
+    <p class="cart__empty" data-cart-empty>Seu carrinho está vazio.<br>Adicione produtos pra começar!</p>
+
+    <footer class="cart__foot">
+      <div class="cart__total"><span>Total estimado</span><strong data-cart-total>R$ 0,00</strong></div>
+      <button class="btn btn--green btn--block" type="button" data-cart-checkout>Enviar pedido no WhatsApp</button>
+      <button class="cart__clear" type="button" data-cart-clear>Limpar carrinho</button>
+    </footer>
+  </aside>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>-->
+
+  <!-- JS escalonado: cada camada só depende das anteriores 
+  <script src="js/namespace.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/utils/format.js"></script>
+  <script src="js/utils/storage.js"></script>
+  <script src="js/utils/dom.js"></script>
+  <script src="js/modules/cart.js"></script>
+  <script src="js/ui/assets.js"></script>
+  <script src="js/ui/header.js"></script>
+  <script src="js/ui/toast.js"></script>
+  <script src="js/ui/info.js"></script>
+  <script src="js/ui/catalog.js"></script>
+  <script src="js/ui/cartDrawer.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
