@@ -1,4 +1,3 @@
-/** Camada 4 — UI: aviso rápido (toast). */
 BJ.toast = (function () {
   var el, timer;
 
