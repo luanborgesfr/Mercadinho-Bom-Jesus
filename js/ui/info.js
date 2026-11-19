@@ -1,8 +1,3 @@
-/**
- * Camada 4 — UI: informações de contato (WhatsApp, mapa, telefone, horário).
- * Tudo vem de BJ.config; quando o número não existe, o botão ainda abre o WhatsApp
- * (sem contato definido) pra não ficar um botão morto.
- */
 BJ.info = (function () {
   function whatsappUrl(text) {
     var number = BJ.format.digitsOnly(BJ.config.whatsappNumber);
