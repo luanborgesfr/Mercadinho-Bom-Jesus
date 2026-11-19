@@ -1,4 +1,3 @@
-/** Camada 2 — localStorage com proteção (modo anônimo/bloqueado não quebra o site). */
 BJ.storage = {
   read: function (key, fallback) {
     try {
