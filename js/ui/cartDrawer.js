@@ -1,4 +1,3 @@
-/** Camada 4 — UI: gaveta do carrinho + contador + envio do pedido. */
 BJ.cartDrawer = (function () {
   var drawer, overlay, listEl, totalEl, counters;
 
