@@ -1,4 +1,3 @@
-/** Camada 4 — UI: menu mobile (hambúrguer). */
 BJ.header = {
   init: function () {
     var burger = BJ.dom.one("[data-menu-toggle]");
