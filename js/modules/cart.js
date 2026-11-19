@@ -1,7 +1,3 @@
-/**
- * Camada 3 — Módulo do carrinho.
- * Lógica pura: não toca no DOM. A UI se inscreve com BJ.cart.subscribe().
- */
 BJ.cart = (function () {
   var items = {}; // { [productId]: quantidade }
   var listeners = [];
