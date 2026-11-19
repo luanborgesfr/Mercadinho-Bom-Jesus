@@ -1,4 +1,3 @@
-/** Camada 4 — UI: catálogo (filtros por categoria + cards de produto). */
 BJ.catalog = (function () {
   var ALL = "Todos";
   var active = ALL;
