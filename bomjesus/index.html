@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comercial Bom Jesus | Sua família mais feliz!</title>
+  <meta name="description" content="Comercial Bom Jesus, mercadinho no bairro Palmeiras, São Miguel do Guamá - PA. Sua família mais feliz!">
+  <meta name="theme-color" content="#FFC400">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,800;1,900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page">
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__brand" href="#inicio" aria-label="Comercial Bom Jesus - início">
+        <img class="logo" src="assets/logo.png" alt="Comercial Bom Jesus" data-asset>
+        <span class="logo-fallback">Comercial <strong>Bom Jesus</strong></span>
+      </a>
+
+      <nav class="header__nav" id="menu" aria-label="Menu principal">
+        <a class="header__link" href="#produtos">Produtos</a>
+        <a class="header__link" href="#sobre">Sobre</a>
+        <a class="header__link" href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--navy btn--cart" type="button" data-cart-open aria-label="Abrir carrinho">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2M9 20a1 1 0 1 0 0-.01M17 20a1 1 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="btn__label">Carrinho</span>
+          <span class="badge" data-cart-count>0</span>
+        </button>
+        <button class="header__burger" type="button" data-menu-toggle aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="header__stripe"></div>
+  </header>
+</body>
+</html>
